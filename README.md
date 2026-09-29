@@ -33,42 +33,6 @@ Tecnologías utilizadas
 * dotenv para manejar las variables de configuración.
 * Git y GitHub para el control de versiones.
 
-Estructura del proyecto
-
-GLOWCURL_AA3_EV01/
-│
-├── backend/
-│   ├── server.js
-│   └── db.js
-│
-├── database/
-│   └── glowcurl.sql
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   ├── app.js
-│   ├── clientes.js
-│   └── menu.js
-│
-├── pages/
-│   ├── auth/
-│   │   ├── registroCliente.html
-│   │   └── loginCliente.html
-│   │
-│   └── cliente/
-│       ├── inicioCliente.html
-│       ├── perfilCliente.html
-│       ├── citasCliente.html
-│       └── productosCliente.html
-│
-├── .env
-├── .gitignore
-├── package.json
-├── README.md
-└── ENLACE_REPOSITORIO.txt
-
 Base de datos
 
 El proyecto utiliza la base de datos **glow_curl_app** en MySQL.
