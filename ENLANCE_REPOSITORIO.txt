@@ -3,7 +3,7 @@ ENLACE AL REPOSITORIO - GA7-220501096-AA3-EV01
 Proyecto: Glow Curl App
 
 Repositorio GitHub:
-https://github.com/KatherinShaiel2/GlowCurlApp
+https://github.com/Katherin08/GLOW_CURL_AA3_EV01
 
 Evidencia:
 GA7-220501096-AA3-EV01 - Codificación de módulos del software
