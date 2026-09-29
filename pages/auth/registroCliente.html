@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Registro - Glow Curl App</title>
+
+    <!-- CSS PRINCIPAL -->
+    <link
+        rel="stylesheet"
+        href="../../css/style.css"
+    >
+
+</head>
+
+
+<body class="pagina-registro">
+
+    <!-- ==========================================
+         CONTENEDOR PRINCIPAL
+         ========================================== -->
+
+    <main class="registro-contenedor">
+
+        <section class="registro-tarjeta">
+
+            <!-- ==========================================
+                 ENCABEZADO
+                 ========================================== -->
+
+            <div class="registro-encabezado">
+
+                <div class="logo-registro">
+                    GC
+                </div>
+
+                <h1>Crear cuenta</h1>
+
+                <p>
+                    Regístrate en Glow Curl App
+                </p>
+
+            </div>
+
+
+            <!-- ==========================================
+                 FORMULARIO
+                 ========================================== -->
+
+            <form
+                id="formularioCliente"
+                autocomplete="off"
+            >
+
+                <!-- NOMBRE -->
+
+                <div class="campo">
+
+                    <label for="nombre">
+                        Nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingresa tu nombre"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- APELLIDO -->
+
+                <div class="campo">
+
+                    <label for="apellido">
+                        Apellido
+                    </label>
+
+                    <input
+                        type="text"
+                        id="apellido"
+                        name="apellido"
+                        placeholder="Ingresa tu apellido"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- TELÉFONO -->
+
+                <div class="campo">
+
+                    <label for="telefono">
+                        Teléfono
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="Ingresa tu teléfono"
+                    >
+
+                </div>
+
+
+                <!-- CORREO -->
+
+                <div class="campo">
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- TIPO DE CABELLO -->
+
+                <div class="campo">
+
+                    <label for="cabello">
+                        Tipo de cabello
+                    </label>
+
+                    <select
+                        id="cabello"
+                        name="cabello"
+                        required
+                    >
+
+                        <option value="">
+                            Selecciona tu tipo de cabello
+                        </option>
+
+                        <option value="Ondulado">
+                            Ondulado
+                        </option>
+
+                        <option value="Rizo">
+                            Rizo
+                        </option>
+
+                        <option value="Afro">
+                            Afro
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- CONTRASEÑA -->
+
+                <div class="campo">
+
+                    <label for="contrasena">
+                        Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        placeholder="Crea una contraseña"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CONFIRMAR CONTRASEÑA -->
+
+                <div class="campo">
+
+                    <label for="confirmarContrasena">
+                        Confirmar contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmarContrasena"
+                        name="confirmarContrasena"
+                        placeholder="Repite tu contraseña"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- MOSTRAR CONTRASEÑA -->
+
+                <div class="mostrar-password">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="mostrarPassword"
+                        >
+
+                        Mostrar contraseña
+
+                    </label>
+
+                </div>
+
+
+                <!-- BOTÓN REGISTRAR -->
+
+                <button
+                    type="submit"
+                    class="btn btn-principal"
+                    id="btn-registrar"
+                >
+                    Crear cuenta
+                </button>
+
+
+                <!-- MENSAJE -->
+
+                <p
+                    id="mensaje"
+                    class="mensaje"
+                ></p>
+
+            </form>
+
+
+            <!-- ==========================================
+                 ENLACE PARA INICIAR SESIÓN
+                 ========================================== -->
+
+            <div class="registro-enlace">
+
+                <p>
+                    ¿Ya tienes una cuenta?
+                </p>
+
+                <a href="loginCliente.html">
+                    Iniciar sesión
+                </a>
+
+            </div>
+
+
+            <!-- ==========================================
+                 VOLVER AL INICIO
+                 ========================================== -->
+
+            <div class="volver-inicio">
+
+                <a href="../../index.html">
+                    ← Volver al inicio
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+         ========================================== -->
+
+    <script src="../../js/clientes.js"></script>
+
+
+    <!-- ==========================================
+         MOSTRAR / OCULTAR CONTRASEÑA
+         ========================================== -->
+
+    <script>
+
+        const mostrarPassword =
+            document.getElementById("mostrarPassword");
+
+        const contrasena =
+            document.getElementById("contrasena");
+
+        const confirmarContrasena =
+            document.getElementById("confirmarContrasena");
+
+
+        mostrarPassword.addEventListener(
+            "change",
+            function () {
+
+                if (this.checked) {
+
+                    contrasena.type = "text";
+
+                    confirmarContrasena.type = "text";
+
+                } else {
+
+                    contrasena.type = "password";
+
+                    confirmarContrasena.type = "password";
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

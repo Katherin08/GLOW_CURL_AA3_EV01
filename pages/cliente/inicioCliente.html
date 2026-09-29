@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Inicio | Glow Curl</title>
+
+<link
+    rel="stylesheet"
+    href="../../css/style.css"
+>
+</head>
+
+<body>
+
+
+<!-- ==========================================
+     BOTÓN MENÚ
+=========================================== -->
+
+<button
+    type="button"
+    class="menu-toggle"
+    id="menuToggle"
+>
+    ☰
+</button>
+
+
+<!-- ==========================================
+     FONDO DEL MENÚ
+=========================================== -->
+
+<div
+    class="overlay"
+    id="overlay"
+></div>
+
+
+<!-- ==========================================
+     MENÚ LATERAL
+=========================================== -->
+
+<aside
+    class="sidebar"
+    id="sidebar"
+>
+
+    <div class="sidebar-header">
+
+        <h2>
+            Glow Curl
+        </h2>
+
+        <button
+            type="button"
+            class="close-menu"
+            id="closeMenu"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <!-- INICIO -->
+
+        <a
+            href="inicioCliente.html"
+            class="active"
+        >
+
+            <span class="icono">
+                🏠
+            </span>
+
+            <span>
+                Inicio
+            </span>
+
+        </a>
+
+
+        <!-- PERFIL -->
+
+        <a
+            href="perfilCliente.html"
+        >
+
+            <span class="icono">
+                👤
+            </span>
+
+            <span>
+                Mi perfil
+            </span>
+
+        </a>
+
+
+        <!-- CERRAR SESIÓN -->
+
+        <a
+            href="../auth/loginCliente.html"
+        >
+
+            <span class="icono">
+                🚪
+            </span>
+
+            <span>
+                Cerrar sesión
+            </span>
+
+        </a>
+
+    </nav>
+
+</aside>
+
+
+<!-- ==========================================
+     CONTENIDO PRINCIPAL
+=========================================== -->
+
+<main class="contenido">
+
+
+    <!-- BIENVENIDA -->
+
+    <section class="bienvenida">
+
+        <h1>
+            ¡Bienvenido a Glow Curl! 🌸
+        </h1>
+
+        <p>
+            Sistema de gestión de clientes
+            para el cuidado del cabello
+            rizado y crespo.
+        </p>
+
+        <p>
+            Desde este espacio puedes consultar
+            y actualizar tu información personal.
+        </p>
+
+    </section>
+
+
+    <!-- ==========================================
+         TARJETA DE PERFIL
+    =========================================== -->
+
+    <section class="tarjetas">
+
+        <article class="card">
+
+            <div class="card-icon">
+                👤
+            </div>
+
+            <h2>
+                Mi perfil
+            </h2>
+
+            <p>
+                Consulta y actualiza tus datos
+                personales y tu tipo de cabello.
+            </p>
+
+            <a
+                href="perfilCliente.html"
+                class="btn"
+            >
+                Ver mi perfil
+            </a>
+
+        </article>
+
+    </section>
+
+
+</main>
+
+
+<!-- ==========================================
+     JAVASCRIPT
+=========================================== -->
+
+<script src="../../js/menu.js"></script>
+</body>
+
+</html>

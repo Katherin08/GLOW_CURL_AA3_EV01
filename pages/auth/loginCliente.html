@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Iniciar sesión - Glow Curl</title>
+
+    <!-- Hoja de estilos principal -->
+    <link
+        rel="stylesheet"
+        href="../../css/style.css"
+    >
+
+</head>
+
+
+<body class="pagina-login">
+
+    <!-- ==========================================
+         CONTENEDOR PRINCIPAL
+         ========================================== -->
+
+    <main class="login-contenedor">
+
+        <section class="login-tarjeta">
+
+            <!-- ==========================================
+                 BOTÓN VOLVER
+                 ========================================== -->
+
+            <div class="login-volver">
+
+                <a href="../../index.html">
+                    🏠 Inicio
+                </a>
+
+            </div>
+
+
+            <!-- ==========================================
+                 ENCABEZADO
+                 ========================================== -->
+
+            <div class="login-encabezado">
+
+                <div class="logo-login">
+                    GC
+                </div>
+
+                <h1>
+                    Glow Curl
+                </h1>
+
+                <p>
+                    Inicia sesión como cliente
+                </p>
+
+            </div>
+
+
+            <!-- ==========================================
+                 FORMULARIO
+                 ========================================== -->
+
+            <form
+                id="loginClienteForm"
+                autocomplete="off"
+            >
+
+                <!-- CORREO -->
+
+                <div class="campo">
+
+                    <label for="usuarioCliente">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="usuarioCliente"
+                        name="usuarioCliente"
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CONTRASEÑA -->
+
+                <div class="campo">
+
+                    <label for="passwordCliente">
+                        Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="passwordCliente"
+                        name="passwordCliente"
+                        placeholder="Ingresa tu contraseña"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- MOSTRAR CONTRASEÑA -->
+
+                <div class="mostrar-password">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="mostrarPassword"
+                        >
+
+                        Mostrar contraseña
+
+                    </label>
+
+                </div>
+
+
+                <!-- BOTONES -->
+
+                <div class="login-botones">
+
+                    <button
+                        type="submit"
+                        class="btn btn-principal"
+                    >
+                        Iniciar sesión
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-secundario"
+                        id="limpiarCliente"
+                    >
+                        Limpiar
+                    </button>
+
+                </div>
+
+
+                <!-- MENSAJE -->
+
+                <p
+                    id="mensaje"
+                    class="mensaje"
+                ></p>
+
+            </form>
+
+
+            <!-- ==========================================
+                 REGISTRO
+                 ========================================== -->
+
+            <div class="login-registro">
+
+                <p>
+                    ¿No tienes cuenta?
+                </p>
+
+                <a href="registroCliente.html">
+                    Registrarse
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+         ========================================== -->
+
+    <script src="../../js/clientes.js"></script>
+
+
+    <!-- ==========================================
+         MOSTRAR / OCULTAR CONTRASEÑA
+         ========================================== -->
+
+    <script>
+
+        const mostrarPassword =
+            document.getElementById("mostrarPassword");
+
+        const passwordCliente =
+            document.getElementById("passwordCliente");
+
+
+        mostrarPassword.addEventListener(
+            "change",
+            function () {
+
+                if (this.checked) {
+
+                    passwordCliente.type = "text";
+
+                } else {
+
+                    passwordCliente.type = "password";
+
+                }
+
+            }
+        );
+
+    </script>
+    <script src="../../js/clientes.js"></script>
+
+</body>
+
+</html>
+

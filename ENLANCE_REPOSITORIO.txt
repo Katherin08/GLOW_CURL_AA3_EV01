@@ -1,0 +1,21 @@
+ENLACE AL REPOSITORIO - GA7-220501096-AA3-EV01
+
+Proyecto: Glow Curl App
+
+Repositorio GitHub:
+https://github.com/KatherinShaiel2/GlowCurlApp
+
+Evidencia:
+GA7-220501096-AA3-EV01 - Codificación de módulos del software
+
+Módulo desarrollado:
+Gestión de clientes
+
+Tecnologías utilizadas:
+HTML
+CSS
+JavaScript
+Node.js
+Express
+MySQL
+Git y GitHub

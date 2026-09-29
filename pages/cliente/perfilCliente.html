@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+```
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Mi Perfil - Glow Curl</title>
+
+<link rel="stylesheet"
+      href="../../css/style.css">
+```
+
+</head>
+
+<body>
+
+```
+<button
+    type="button"
+    class="menu-toggle"
+    id="menuToggle">
+
+    ☰
+
+</button>
+
+
+<div
+    class="overlay"
+    id="overlay">
+</div>
+
+
+<aside
+    class="sidebar"
+    id="sidebar">
+
+
+    <div class="sidebar-header">
+
+        <h2>
+            Glow Curl
+        </h2>
+
+        <button
+            type="button"
+            class="close-menu"
+            id="closeMenu">
+
+            ×
+
+        </button>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+
+        <a href="inicioCliente.html">
+
+            <span class="icono">
+                🏠
+            </span>
+
+            <span>
+                Inicio
+            </span>
+
+        </a>
+
+
+        <a
+            href="perfilCliente.html"
+            class="active">
+
+            <span class="icono">
+                👤
+            </span>
+
+            <span>
+                Mi perfil
+            </span>
+
+        </a>
+
+
+        <a href="../auth/loginCliente.html">
+
+            <span class="icono">
+                🚪
+            </span>
+
+            <span>
+                Cerrar sesión
+            </span>
+
+        </a>
+
+    </nav>
+
+</aside>
+
+
+<main class="contenido">
+
+    <h1>
+        👤 Mi Perfil
+    </h1>
+
+    <p>
+        Consulta y actualiza la información
+        registrada en Glow Curl.
+    </p>
+
+
+    <form
+        class="formulario"
+        id="formularioPerfil">
+
+
+        <label for="nombre">
+            Nombre
+        </label>
+
+        <input
+            type="text"
+            id="nombre"
+            required>
+
+
+        <label for="apellido">
+            Apellido
+        </label>
+
+        <input
+            type="text"
+            id="apellido"
+            required>
+
+
+        <label for="correo">
+            Correo electrónico
+        </label>
+
+        <input
+            type="email"
+            id="correo"
+            required>
+
+
+        <label for="telefono">
+            Teléfono
+        </label>
+
+        <input
+            type="tel"
+            id="telefono">
+
+
+        <label for="cabello">
+            Tipo de cabello
+        </label>
+
+        <select
+            id="cabello"
+            required>
+
+            <option value="">
+                Selecciona una opción
+            </option>
+
+            <option value="Ondulado">
+                Ondulado
+            </option>
+
+            <option value="Rizo">
+                Rizo
+            </option>
+
+            <option value="Afro">
+                Afro
+            </option>
+
+        </select>
+
+
+        <div></div>
+
+
+        <button
+            type="submit"
+            class="btn">
+
+            Guardar información
+
+        </button>
+
+    </form>
+
+
+    <p id="mensaje"></p>
+
+</main>
+
+
+<script src="../../js/menu.js"></script>
+
+<script src="../../js/clientes.js"></script>
+```
+
+</body>
+
+</html>
